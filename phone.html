@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Second Harvest Town Hall — Join</title>
+<title>Poll</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -70,6 +70,7 @@ html,body{height:100%;background:var(--cream);font-family:'Poppins',sans-serif;c
     proud:{type:'text',kicker:'Over to you',title:'What work are you most proud of last quarter?',sub:'A few words is perfect — it shows up on the big screen.',placeholder:'e.g. Shipped the Food Vision pilot…',max:80},
     pd:{type:'choice',kicker:'Quick one',title:'Planning to use up your PD days this year?',sub:'No wrong answer — we want you to take them.',options:[{v:'done',icon:'event_available',label:'Yes — already done',color:'#1A5D00'},{v:'soon',icon:'event',label:'Planning to',color:'#4C9C2E'},{v:'no',icon:'event_busy',label:'No',color:'#DC8633'}]},
     praise:{type:'choice',kicker:'Quick one',title:'Used Praise to recognize a colleague?',sub:"Shout-outs make someone's whole week.",options:[{v:'yes',icon:'volunteer_activism',label:'Yes I have',color:'#215732'},{v:'notyet',icon:'schedule',label:'Not yet',color:'#DC8633'}]},
+    received:{type:'choice',kicker:'Follow-up',title:'For those who received a Praise — how did it feel?',sub:'Only answer if someone has praised you.',options:[{v:'great',icon:'sentiment_very_satisfied',label:'Great',color:'#1A5D00'},{v:'good',icon:'sentiment_satisfied',label:'Good',color:'#4C9C2E'},{v:'indiff',icon:'sentiment_neutral',label:'Indifferent',color:'#DC8633'}]},
   };
 
   const BROKERS=['wss://broker.emqx.io:8084/mqtt','wss://broker.hivemq.com:8884/mqtt','wss://test.mosquitto.org:8081/mqtt'];
